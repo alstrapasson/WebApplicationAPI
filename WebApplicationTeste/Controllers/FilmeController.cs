@@ -36,17 +36,7 @@ namespace WebApplicationTeste.Controllers
             }
             return NotFound();
 
-            /*
-            foreach (Filme filme in filmes){
-                if(filme.Id == id)
-                {
-                    return filme;
-                }
-            }
-            return null;*/
         }
-
-
 
     }
 }
