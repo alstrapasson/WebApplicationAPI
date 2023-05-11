@@ -40,16 +40,14 @@ namespace WebApplicationTeste.Controllers
             }
             return NotFound();
 
-            /*
-            foreach (Filme filme in filmes){
-                if(filme.Id == id)
-                {
-                    return filme;
-                }
-            }
-            return null;*/
         }
 
+        [HttpPut("{id}")]
+        public IActionResult Atualizafilme(int id)
+        {
+            Filme filme = _context.Filmes.FirstOrDefault(filme=>filme.Id == id);
+
+        }
 
 
     }
